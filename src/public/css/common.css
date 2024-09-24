@@ -1,0 +1,58 @@
+.header {
+    /* Group 105 */
+    
+    position: absolute;
+    width: 1512px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+        /* Line 5 */
+        
+            position: absolute;
+            width: 1512px;
+            height: 0px;
+            left: 0px;
+            top: 100px;
+        
+            border: 1px solid #E0DFDE;
+}
+
+.header__logo {
+    /* FashionablyLate */
+    
+        position: absolute;
+        width: 1509.01px;
+        height: 100px;
+        left: 2.99px;
+        top: 0px;
+    
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 52px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: #8B7969;
+}
+
+.confirm__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header-utilities {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

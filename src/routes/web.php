@@ -16,6 +16,10 @@ use App\Http\Controllers\AuthController;
 |
 */
 
+Route::get('/contact', [ContactController::class, 'create']);
+Route::post('/contact/confirm', [ContactController::class, 'confirm']);
+Route::post('/contact/send', [ContactController::class, 'send']);
+
 Route::get('/', [ContactController::class, 'showForm'])->name('contact.form');
 Route::post('/submit', [ContactController::class, 'submit'])->name('contact.submit');
 Route::get('/confirm', [ContactController::class, 'confirm'])->name('contact.confirm');

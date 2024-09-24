@@ -13,12 +13,24 @@ class ContactController extends Controller
 
     public function showForm()
     {
-        return view('contact.form');
+        return view('confirm');
     }
 
-    public function confirm()
+    public function create()
     {
-        return view('confirm');
+        return view('contact.create');
+    }
+
+    public function confirm(Request $request)
+    {
+        $input = $request->all();
+        return view('contact.confirm', compact('input'));
+    }
+
+    public function send(Request $request)
+    {
+        // データ送信のロジックを実装
+        return redirect()->route('contact.create')->with('message', '送信が完了しました');
     }
 
     public function thanks()
